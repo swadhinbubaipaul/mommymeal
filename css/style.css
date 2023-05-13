@@ -20,6 +20,7 @@ html {
 	background-color: rgba(0, 0, 0, 0.521);
 	position: sticky;
 	top: 0px;
+	z-index: 1;
 }
 
 /* Navigation Bar: Logo and Image */

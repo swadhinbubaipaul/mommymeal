@@ -1,0 +1,211 @@
+/* CSS Reset */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+	--navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+	display: flex;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.521);
+	position: sticky;
+	top: 0px;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+	margin: 13px 30px;
+}
+#logo img {
+	margin: 3px 5px;
+	width: 59px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+	display: flex;
+}
+#navbar ul li {
+	/* color: white; */
+	list-style: none;
+	font-size: 1.3rem;
+}
+#navbar ul li a {
+	color: white;
+	display: block;
+	padding: 3px 22px;
+	border-radius: 20px;
+	text-decoration: none;
+	font-family: "Roboto Mono", monospace;
+	font-weight: bold;
+}
+#navbar ul li a:hover {
+	color: black;
+	background-color: white;
+}
+
+/* Home Section */
+#home {
+	display: flex;
+	flex-direction: column;
+	padding: 3px 200px;
+	justify-content: center;
+	align-items: center;
+	height: 554px;
+}
+#home::before {
+	content: "";
+	position: absolute;
+	background: url(../img/bg2.jpg) no-repeat center center/cover;
+	height: 642px;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.89;
+}
+
+#home h1 {
+	color: white;
+	text-align: center;
+	font-family: "Kalam", cursive;
+}
+#home p {
+	color: white;
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: "Roboto Mono", monospace;
+}
+
+/* Services Section  */
+#services {
+	margin: 34px;
+	display: flex;
+}
+#services .box {
+	border: 2px solid brown;
+	padding: 34px;
+	margin: 3px 6px;
+	border-radius: 23px;
+	background-color: #80808014;
+}
+#services .box img {
+	height: 160px;
+	margin: auto;
+	display: block;
+}
+#services .box p {
+	font-family: "Roboto Mono", monospace;
+}
+
+/* Clients Section */
+#client-section {
+	position: relative;
+	/* height: 392px; */
+	margin-top: 90px;
+}
+#client-section h1 {
+	padding-top: 53px;
+}
+#client-section::before {
+	content: "";
+	position: absolute;
+	background: url(../img/bg.jpg);
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.7;
+}
+#clients {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.client-item {
+	padding: 34px;
+}
+#clients img {
+	height: 125px;
+}
+/* Contact Section */
+#contact {
+	position: relative;
+	height: 590px;
+}
+#contact::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.7;
+	background: url(../img/contact2.jpg) no-repeat center center/cover;
+}
+#contact h1 {
+	padding-top: 53px;
+}
+
+#contact-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea {
+	width: 100%;
+	padding: 0.5rem;
+	border-radius: 9px;
+	font-size: 1rem;
+}
+#contact-box form {
+	width: 40%;
+}
+#contact-box label {
+	font-size: 1.3rem;
+	font-family: sans-serif;
+}
+footer {
+	background-color: black;
+	color: white;
+}
+/* Utility Classes */
+.h-primary {
+	font-size: 3.8rem;
+	padding: 12px;
+	font-family: sans-serif;
+}
+.h-secondary {
+	font-size: 2.8rem;
+	padding: 12px;
+	font-family: sans-serif;
+}
+
+.btn {
+	padding: 6px 20px;
+	margin: 70px;
+	border: 2px solid white;
+	background-color: #3c403c4f;
+	color: white;
+	font-size: 1.5rem;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: 0px 2px lightyellow;
+}
+.btn:hover {
+	transform: scale(1.1);
+}
+
+.center {
+	text-align: center;
+}

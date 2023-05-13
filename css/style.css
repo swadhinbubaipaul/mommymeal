@@ -181,6 +181,9 @@ html {
 	font-size: 1.3rem;
 	font-family: sans-serif;
 }
+.form-group {
+	margin: 6px 0px;
+}
 footer {
 	background-color: black;
 	color: white;
